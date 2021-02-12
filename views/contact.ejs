@@ -2,21 +2,67 @@
 <!DOCTYPE html>
 <html>
 
-<%- include partials/header.ejs %>
+<head>
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+  <% include ./partials/header %>
+</head>
 
 <body>
   <!-- Navigation-->
-  <%- include partials/main_nav %>
+  <% include ./partials/main_nav %>
   <!-- Main content -->
   <main class="container">
-    <div class="jumbotron">
-      <h1 class="display-4">Welcome to <%= title %></h1>
       
+    <div>
+        <h3>
+            Contact Me
+        </h3>
+        <div>
+            <p>
+                You can Kindly send a message . We wil get Back to You as soon as posible
+            </p>
+            <p>
+                Alternatively u can also Directly send me an Email via:
+                
+                 <a href = "mailto: duvvurunikhil@gmail.com"> duvvurunikhil@gmail.com </a>
+            </p>
+            <!-- Form Submision -->
+        <form  action="/thanku" method="GET" >
+            <div class="form-group" >
+                <label for="exampleFormControlInput1">Email address</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1"
+                 placeholder="name@example.com">
+            
+
+            <div class="row">
+                    <div class="col-md-6 mb-6 mb-lg-6">
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1">First Name </label>
+                            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="First Name">
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-6 mb-lg-6">
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1">Last Name</label>
+                            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Last Name">
+                        </div>
+                    </div>
+                    </div>
+            <div>
+            </div>
+
+            <div class="form-group">
+                <label for="exampleFormControlTextarea1">Your Message</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="4"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+
+        </div>
     </div>
   </main>
-  <% include partials/bottom_nav %>
-  <!-- js styles -->
-  
+      <% include ./partials/bottom_nav %>
+
       <!--Footer-->
     <% include ./partials/footer %>
 

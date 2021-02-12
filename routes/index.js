@@ -30,4 +30,10 @@ router.get('/contact', function(req, res, next) {
   res.render('contact', { title: 'Contact Page' });
 });
 
+router.get("/thanku", function(req, res, next) {
+  console.log("BODY IS",req.body);
+  res.render('Thanku', { title: 'Thank You Page' });
+  
+});
+
 module.exports = router;

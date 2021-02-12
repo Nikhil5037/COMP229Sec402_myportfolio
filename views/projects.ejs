@@ -2,11 +2,13 @@
 <!DOCTYPE html>
 <html>
 
-<%- include partials/header.ejs %>
-
+<head>
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+  <% include ./partials/header %>
+</head>
 <body>
   <!-- Navigation-->
-  <%- include partials/main_nav %>
+  <% include ./partials/main_nav %>
   <!-- Main content -->
   <main class="container">
     <div class="jumbotron">
@@ -14,7 +16,7 @@
       
     </div>
   </main>
-  <% include partials/bottom_nav %>
+  <% include ./partials/bottom_nav %>
   <!-- js styles -->
   
       <!--Footer-->
