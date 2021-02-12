@@ -389,3 +389,10 @@ body {
     border-radius: 20px;
     padding: 10px 20px;
   }
+  .profilepic {
+    border-radius: 45%;
+      width: 61%;
+      height: 70%;
+      margin-top: 20px;
+      margin-left: 15px;
+  }

@@ -1,5 +1,6 @@
 var express = require('express');
 var router = express.Router();
+const fs = require("fs");
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
@@ -29,11 +30,15 @@ router.get('/about', function(req, res, next) {
 router.get('/contact', function(req, res, next) {
   res.render('contact', { title: 'Contact Page' });
 });
-
+/* GET Contact submision Thank You page. */
 router.get("/thanku", function(req, res, next) {
-  console.log("BODY IS",req.body);
   res.render('Thanku', { title: 'Thank You Page' });
-  
+});
+
+router.get("/resume",(req, res, next)=>{
+    var data =fs.readFileSync('./public/Assets/Resume_Nikhil.pdf');
+    res.contentType("application/pdf");
+    res.send(data);
 });
 
 module.exports = router;
