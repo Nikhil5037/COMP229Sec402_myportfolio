@@ -391,8 +391,15 @@ body {
   }
   .profilepic {
     border-radius: 45%;
-      width: 61%;
-      height: 70%;
-      margin-top: 20px;
-      margin-left: 15px;
+    width: 150px;
+    height: 160px;
+    margin-top: 20px;
+    margin-left: 15px;
+  }
+  .serviceDiv {
+    padding: 50px;
+  }
+  .card-title {
+    text-align: center;
+    padding-top: 15px;
   }
