@@ -11,14 +11,40 @@
   <% include ./partials/main_nav %>
   <!-- Main content -->
   <main class="container">
-    <div class="jumbotron">
-      <h1 class="display-4">Welcome to <%= title %></h1>
-      
-    </div>
+
   </main>
   <% include ./partials/bottom_nav %>
   <!-- js styles -->
-  
+
+  <div class="projectsDiv" >
+    <% AllProjects.forEach(function(entry) {%>
+
+    <div>
+
+      <div class="card project" >
+
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-3 col-lg-3">
+              <img src="<%=entry.img%>" class="projectImg" />
+            </div>
+            <div class="col-12 col-sm-12 col-md-9 col-lg-9">
+
+                <h4 > <b> <%=entry.Title%> </b> </h4>
+                <p> <b>My Role: </b> <%=entry.Role%> </p>
+                <p> <b> Web Address: </b> <a href="<%=entry.WebAddress%>" target="_blank" >  <%=entry.WebAddress%> </a> </p>
+               
+                <p> <%=entry.description %> </p>
+            </div>
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <%});%>
+  </div>
+
       <!--Footer-->
     <% include ./partials/footer %>
 

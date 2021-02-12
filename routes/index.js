@@ -16,7 +16,17 @@ router.get('/about', function(req, res, next) {
 });
 /* GET projects page. */
 router.get('/projects', function(req, res, next) {
-  res.render('projects', { title: 'Projects Page' });
+  res.render('projects',{ title: "projects",
+     AllProjects: [
+      {
+        Title: "smartdhyana",
+        Role: "Developer",
+        WebAddress: "https://www.smartdhyana.com/",
+        img:"https://smartdhyanablog.files.wordpress.com/2019/08/dhyana_-why-do-you-need-a-device-for-meditation.png",
+        description: "Dhyana is a Meditation Ring which Tracks your HRV Values and also calculate your Mindfulnes. A Ring that can Test Your Meditaion and Gives How stresful, Relaxed you are throgh the Meditaion sessions"
+      },
+    ] }
+  );
 });
 /* GET services page. */
 router.get('/services', function(req, res, next) {

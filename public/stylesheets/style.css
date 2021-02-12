@@ -403,3 +403,17 @@ body {
     text-align: center;
     padding-top: 15px;
   }
+  .projectsDiv {
+    padding-top: 50px;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 50px;
+  }
+  .project {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .projectImg {
+    width: 100%;
+    height: 100%;
+  }
