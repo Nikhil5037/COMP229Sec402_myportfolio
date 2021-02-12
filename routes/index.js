@@ -11,23 +11,23 @@ router.get('/home', function(req, res, next) {
 });
 /* GET about page. */
 router.get('/about', function(req, res, next) {
-  res.render('index', { title: 'About' });
+  res.render('about', { title: 'About Page' });
 });
-/* GET products page. */
-router.get('/products', function(req, res, next) {
-  res.render('index', { title: 'Products' });
+/* GET projects page. */
+router.get('/projects', function(req, res, next) {
+  res.render('projects', { title: 'Projects Page' });
 });
 /* GET services page. */
 router.get('/services', function(req, res, next) {
-  res.render('index', { title: 'Services' });
+  res.render('services', { title: 'Services' });
 });
 /* GET about us page. */
-router.get('/aboutus', function(req, res, next) {
-  res.render('index', { title: 'About' });
+router.get('/about', function(req, res, next) {
+  res.render('about', { title: 'About Page' });
 });
 /* GET Contact us page. */
 router.get('/contact', function(req, res, next) {
-  res.render('index', { title: 'Contact' });
+  res.render('contact', { title: 'Contact Page' });
 });
 
 module.exports = router;
