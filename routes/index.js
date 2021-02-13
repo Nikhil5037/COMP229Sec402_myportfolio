@@ -4,7 +4,7 @@ const fs = require("fs");
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Home' });
+  res.render('index', { title: 'Home Page' });
 });
 /* GET home page. */
 router.get('/home', function(req, res, next) {
@@ -25,6 +25,13 @@ router.get('/projects', function(req, res, next) {
         img:"https://smartdhyanablog.files.wordpress.com/2019/08/dhyana_-why-do-you-need-a-device-for-meditation.png",
         description: "Dhyana is a Meditation Ring which Tracks your HRV Values and also calculate your Mindfulnes. A Ring that can Test Your Meditaion and Gives How stresful, Relaxed you are throgh the Meditaion sessions"
       },
+      {
+        Title: "BankMuscat InternetBanking",
+        Role: "Performance Tester",
+        WebAddress: "https://www.bankmuscatonline.com/",
+        img:"/Assets/BM.png",
+        description: "Bank Muscat is a leading bank in Oman. Internet Banking Application for which different types of load testing is done as per the Requirements."
+      },
     ] }
   );
 });
@@ -41,8 +48,8 @@ router.get('/contact', function(req, res, next) {
   res.render('contact', { title: 'Contact Page' });
 });
 /* GET Contact submision Thank You page. */
-router.get("/thanku", function(req, res, next) {
-  res.render('Thanku', { title: 'Thank You Page' });
+router.get("/home", function(req, res, next) {
+  res.render('index', { title: 'Home Page' });
 });
 
 router.get("/resume",(req, res, next)=>{
