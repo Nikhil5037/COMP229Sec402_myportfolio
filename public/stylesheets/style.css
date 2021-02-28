@@ -1,3 +1,4 @@
+/*Nikhileswar Reddy Duvvuru 301167843 14 Feb 2021*/
 body {
     padding: 50px;
     font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
@@ -420,5 +421,6 @@ body {
   }
   .logo {
     font-size: 50px;
-    color: red;
+    color: green;
+    height: auto;
   }
