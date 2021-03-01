@@ -3,6 +3,7 @@
 Comp 229- Web Application development
 
 301167843 27 Feb 2021*/
+const { name } = require('ejs');
 let express = require('express');
 let router = express.Router();
 let mongoose = require('mongoose');
@@ -22,7 +23,7 @@ module.exports.displayContactList = (req, res, next) => {
 
             res.render('contact/list', {title: 'Business Contacts-List', ContactList: contactList,displayName: req.user ? req.user.displayName : ''});      
         }
-    });
+    }).sort({name:1}); //sorting by name
 }
 
 module.exports.displayAddPage = (req, res, next) => {
