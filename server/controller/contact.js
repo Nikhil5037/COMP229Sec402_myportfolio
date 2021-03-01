@@ -1,3 +1,8 @@
+/*Nikhileswar Reddy Duvvuru 
+
+Comp 229- Web Application development
+
+301167843 27 Feb 2021*/
 let express = require('express');
 let router = express.Router();
 let mongoose = require('mongoose');
@@ -15,7 +20,7 @@ module.exports.displayContactList = (req, res, next) => {
         else
         {
 
-            res.render('contact/list', {title: 'Contacts-List', ContactList: contactList,displayName: req.user ? req.user.displayName : ''});      
+            res.render('contact/list', {title: 'Business Contacts-List', ContactList: contactList,displayName: req.user ? req.user.displayName : ''});      
         }
     });
 }

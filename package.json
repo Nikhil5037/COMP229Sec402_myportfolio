@@ -32,5 +32,17 @@
     "@types/passport": "^1.0.6",
     "@types/passport-local": "^1.0.33",
     "@types/passport-local-mongoose": "^4.0.13"
-  }
+  },
+  "description": "A demo app for COMP229 Week 6",
+  "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nikhil5037/Assignment2_Authentication.git"
+  },
+  "author": "Nikhil",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nikhil5037/Assignment2_Authentication/issues"
+  },
+  "homepage": "https://github.com/Nikhil5037/Assignment2_Authentication#readme"
 }
