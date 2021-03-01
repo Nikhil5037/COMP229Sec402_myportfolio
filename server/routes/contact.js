@@ -19,7 +19,7 @@ function requireAuth(req, res, next)
 
 
 //GET route for books list page - Read
-router.get('/', contactController.displayContactList);
+router.get('/', requireAuth,contactController.displayContactList);
 
   //GET route for displaying the Add page - Create
   router.get('/add',requireAuth, contactController.displayAddPage);
